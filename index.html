@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Online News</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+
+<div class="card1">
+    <div class="container search-wrapper">
+        <div id="search-news" class="card card-body">
+            <h1 class="text-center">Online News</h1>
+
+            <div class="form-group">
+                <label for="news-name">Article</label>
+                <input type="text" id="news-name" class="form-control" placeholder="Search By Name">
+            </div>
+
+            <div class="form-group">
+                <label for="category">SortBy</label>
+                <select class="form-control" id="sort">
+                    <option value=''>-- select --</option>
+                    <option value="publishedAt">PublishedAt</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="country">Country</label>
+                <select class="form-control" id="country">
+                    <option value=''>-- select --</option>
+                    <option value="us">United States</option>
+                    <option value="ca">Iran</option>
+                    <option value="ca">Canada</option>
+                    <option value="gb">United Kingdom</option>
+                    <option value="de">Germany</option>
+                    <option value="br">Brazil</option>
+                    <option value="ar">Argantina</option>
+                    <option value="ru">Russia</option>
+                    <option value="cn">China</option>
+                    <option value="au">Astralia</option>
+                </select>
+
+            </div>
+
+            <div class="form-group">
+                <label for="category">Category</label>
+                <select class="form-control" id="category">
+                    <option value=''>-- select --</option>
+                    <option value="business">Business</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="health">Health</option>
+                    <option value="science">Science</option>
+                    <option value="sport">Sport</option>
+                    <option value="technology">Technology</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="category" >Agency </label>
+                <select class="form-control" id="News-agency">
+                    <option value=''>-- select --</option>
+                    <option value="bbc.com">BBC</option>
+                    <option value="isna.ir">Isna</option>
+                    <option value="zoomit.ir">Zoomit</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" class="mt-5 form-control btn" id="submitBtn" value="Search">
+            </div>
+
+        </div>
+        <div id="message"></div>
+    </div>
+</div>
+<div id="result" class="row mt-5"></div>
+
+
+
+    <!-- <script src="js/app.js"></script> -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
